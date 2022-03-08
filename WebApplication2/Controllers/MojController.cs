@@ -26,11 +26,11 @@ namespace WebApplication2.Controllers
             ViewBag.Broj = broj;
             return View();
         }
-        public ActionResult Student(string ime,string prezime,int godina = 1999)
+        public ActionResult Student()
         {
-            ViewBag.Ime = ime;
-            ViewBag.Prezime = prezime;
-            ViewBag.Godina = godina;
+            ViewBag.Ime = "pokswgfe";
+            ViewBag.Prezime = "osjgfo";
+            ViewBag.Godina = "jushfi";
             return View();
         }
     }
