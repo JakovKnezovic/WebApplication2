@@ -33,5 +33,9 @@ namespace WebApplication2.Controllers
             ViewBag.Godina = "jushfi";
             return View();
         }
+        public string vrativrijeme()
+        {
+            return DateTime.Now.ToString();
+        }
     }
 }
