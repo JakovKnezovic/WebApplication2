@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "TreciIndex";
+    //Layout="~"
+}
+
+<h2>TreciIndex</h2>
+<h1>Treca metoda</h1>
+<h1>Poruka:@ViewBag.Poruka</h1>
+<h1>broj ponavljanja:@ViewBag.Broj</h1>
+@if (ViewBag.Broj <= 20)
+{ 
+    <ul>
+        @for(int x = 0;x< ViewBag.Broj; x++)
+          {
+                      <li>
+                          @ViewBag.Poruka
+                      </li>
+          }
+    </ul>
+}
